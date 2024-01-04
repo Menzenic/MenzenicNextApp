@@ -18,10 +18,12 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "swiper/react": ["node_modules/swiper/react"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/components/client/Products/Products.js", "src/app/components/client/About/About.js", "src/app/components/client/Healthassasment/Healthassasment.js"],
   "exclude": ["node_modules"]
 }

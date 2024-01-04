@@ -1,0 +1,9 @@
+.home-section{
+    background: linear-gradient(
+        180deg,
+        #000000 0%,
+        rgba(28, 28, 28, 0.479167) 151.51%,
+        rgba(53, 53, 53, 0) 303.21%
+    );
+    /* background-color: red; */
+}
