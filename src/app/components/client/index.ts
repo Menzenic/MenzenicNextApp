@@ -1,8 +1,4 @@
-import Buttons from "./Buttons/Button"
-import menzenicSignature from "./MenzenicSignature/MenzenicSignature"
+import Buttons from "./Buttons/Button";
 // import MenzenicSignature from "./MenzenicSignature/MenzenicSignature"
 
-export {
-    Buttons,
-    menzenicSignature
-}
+export { Buttons };
