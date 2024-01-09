@@ -1,10 +1,18 @@
-import Group from "./Group.jsx";
-import VisionIcon from "./VisionIcon.jsx";
-import TriangleIcon from "./TriangleIcon.jsx";
-import HandIcon from "./HandIcon.jsx";
-import EarthIcon from "./EarthIcon.jsx";
-import RabbitIcon from "./RabbitIcon.jsx";
-import MenzenicFullLogoBlock from "./ManzenicFullLogoBlock.jsx";
+
+import VisionIcon from "./VisionIcon";
+import TriangleIcon from "./TriangleIcon";
+import HandIcon from "./HandIcon";
+import EarthIcon from "./EarthIcon";
+import RabbitIcon from "./RabbitIcon";
+import MenzenicFullLogoBlock from "./ManzenicFullLogoBlock";
+import Group from "./Group";
+import LikeIcon from "./LikeIcon";
+import SmileIcon from "./SmileIcon";
+import HygieneAndComfortIcon from "./HygieneAndComfortIcon";
+import LeftSliderArrow from "./LeftSliderArrow";
+import RightSliderArrow from "./RightSliderArrow";
+import HomeDoubleDotBar from "./HomeDoubleDotBar";
+import HomeDesign from "./HomeDesign";
 
 export {
 	Group,
@@ -14,4 +22,11 @@ export {
 	EarthIcon,
 	RabbitIcon,
 	MenzenicFullLogoBlock,
+	LikeIcon,
+	SmileIcon,
+	HygieneAndComfortIcon,
+	LeftSliderArrow,
+	RightSliderArrow,
+	HomeDoubleDotBar,
+	HomeDesign
 };

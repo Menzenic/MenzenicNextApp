@@ -1,15 +1,14 @@
 "use client";
-
-// import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
-
 import { useRouter } from "next/navigation";
 import Button from "../../client/Buttons/Button";
-import {HairRemovalSprayPng} from 'public/Images/png'
+import HairRemovalSprayPng  from 'public/HairRemovalSprayBgRem.08913c67c6d9439a37b1.png'
 import "./Header.css";
-// import { useNavigate }
+import Image from "next/image";
+import HomeDoubleDotBar   from "public/icons/HomeDoubleDotBar"
+import HomeDesign from  "/public/icons/HomeDesign"
 
 export default function Header() {
   // const navigate = useNavigate();
@@ -28,7 +27,7 @@ export default function Header() {
       >
         <SwiperSlide>
           <>
-            <div className="h-[400px] sm:h-[682px] header-image"></div>
+            <div className="h-[600px] sm:h-[682px] header-image "></div>
             <div className="absolute w-screen top-[12.688rem] sm:top-[17.688rem] left-[3.188rem]">
               <div className="text-[24px] sm:text-5xl text-white text-left font-['Arial'] leading-[35px] sm:leading-[55px] font-normal">
                 <p>When it comes to your body,</p>
@@ -51,11 +50,13 @@ export default function Header() {
         <SwiperSlide>
           <>
             <div className="h-[600px] w-screen bg-[#080808] text-white relative flex justify- items-center">
-              <img
-								// src={HairRemovalSprayPng}
-                src="Images\png\HairRemovalSprayBgRem.08913c67c6d9439a37b1.png"
-								alt="Hair Removal Spray"
-							/>
+              <Image 
+              src="/Header_HRS.png"
+              width={500}
+              height={400}
+              className="text-left"
+              
+              />
               <div className="flex flex-col h-[474px] ml-40">
                 <p className="text-4xl ml-20">WHY BUY FROM US?</p>
                 <p className="italic mt-10 text-2xl max-w-[80%]">
@@ -63,7 +64,7 @@ export default function Header() {
                   believe us, try it out for yourself.
                 </p>
                 <div className="mt-7 flex items-center relative text-2xl h-[203px]">
-                  {/* <HomeDoubleDotBar className="absolute top-0" /> */}
+                  <HomeDoubleDotBar className="absolute top-0" />
                   <p className="absolute top-9 left-10">
                     Saves you time, removes hair in just 5 mins.
                   </p>
@@ -77,7 +78,7 @@ export default function Header() {
                   onClick={() => router.push("/products")}
                 />
               </div>
-              {/* <HomeDesign className="absolute bottom-0" /> */}
+              <HomeDesign className="absolute bottom-0" />
             </div>
           </>
         </SwiperSlide>

@@ -1,5 +1,5 @@
 import React from "react";
-// import blogData from "../../data/BlogData";
+import blogData from "../../utils/constants";
 import clsx from "clsx";
 // import blogData from "../data/BlogData";
 import "./blog.css";
@@ -13,7 +13,7 @@ export default function Page() {
 			</h2>
 
 			<div className="blog-container py-2 mt-14 w-full mx-auto grid  grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4 md:px-20">
-				{/* {blogData.map((blog) => (
+				{blogData.map((blog) => (
 					<div
 						className={clsx(
 							"blog-data flex flex-col text-center rounded-md w-full mx-0 sm:mx-4"
@@ -48,7 +48,7 @@ export default function Page() {
 							Read More
 						</a>
 					</div>
-				))} */}
+				))}
 			</div>
 			{/* <Image
 				// src={blogsbackgroundImg}

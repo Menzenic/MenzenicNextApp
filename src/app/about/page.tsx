@@ -1,26 +1,29 @@
-// import Images from ""
-import menZenicImage from "../../images/about-us.jpeg";
+import Image from "next/image";
+// import menZenicImage from "../../images/about-us.jpeg";
 import "./about.css";
 
-import { Group } from "../../../public/Images";
-import {VisionIcon} from "../../../public/Images"
+import { Group } from "../../../public/icons";
+import {VisionIcon} from "../../../public/icons"
 
 // import { VisionIcon} from "./"
 
 export default function About() {
   return (
-    <div className="about-section">
+    <div className="about-section bg-slate-900">
       {/* <div> */}
       {/* <Group /> */}
       <div className="grid md:grid-cols-2 ">
         {/* <div className=" text-4xl"> */}
         {/* <h1>Imag</h1> */}
         <div className="about-image flex-0 pl-12 pb-14 mr-16 w-4/5 pt-20">
-          <img
-            src="Images\Jpg\about-us.jpeg"
-            // alt="about-us"
-            className="w-482 h-726 object-cover"
-          />
+              <Image
+                 
+                 src="/About_MainImage.png"
+                 width={500}
+                 height={500}
+                 alt="Picture of the author"
+              />
+
         </div>
         {/* </div> */}
 

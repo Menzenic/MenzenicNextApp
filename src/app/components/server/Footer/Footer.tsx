@@ -1,12 +1,14 @@
 // import React from 'react'
+import Image from "next/image"
 
 export default function Footer() {
   return (
     //    <div>Footer</div>
-    <div className="mx-7">
-      <h1 className="text-white mx-9 text-4xl"> Contact Us</h1>
+    <section className=" bg-[#F0F0F0] pt-12 pb-8 sm:pb-16 px-9 sm:px-16 sm:pl-77 min-h-400">
+    <div className="">
+      <h1 className=" font-bold mx-9 text-4xl"> Contact Us</h1>
 
-      <div className="grid lg:grid-cols-2 text-white mx-9 mt-3">
+      <div className="grid lg:grid-cols-2 font-bold mx-9 mt-3">
         {/* <div className=" "> */}
         <div className="grid lg:grid-cols-2">
           <div>
@@ -36,11 +38,18 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className=" text-white text-center text-4xl place-content-center ">
-          MENZENIC
+        <div className=" flex justify-center items-center ">
+           <Image
+              src="/Footer_Menzenic.png"
+              width={200}
+              height={200}
+              className="text-white text-center text-4xl"
+              
+           />
         </div>
       </div>
       {/* </div> */}
     </div>
+    </section>
   );
 }

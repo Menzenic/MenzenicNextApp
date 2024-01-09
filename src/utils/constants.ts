@@ -1,9 +1,7 @@
 // import Blogimg1 from "../Images/png/blog1.jpg";
-import Blogimg1 from "public/Images/png/blog1.png";
-import Blogimg2 from "public/Images/png/mission.png";
-import Blogimg3 from "public/Images/png/vission.png";
-// import Blogimg1 from "public/Images/png/blog1.png"
-// import Blogimg1 from "public/Images/png/blog1.png"
+import Blogimg1 from "public/Blog_Image1.png";
+// import Blogimg2 from "public/icons/Blog_Image1.png";
+
 
 const blogData = [
 	{
@@ -14,13 +12,13 @@ const blogData = [
 	},
 	{
 		id: 2,
-		image: Blogimg2,
+		image: Blogimg1,
 		heading: "Taking care of men’s intimate health",
 		link: "https://medium.com/@menzenic/taking-care-of-mens-intimate-health-f14f371f3408",
 	},
 	{
 		id: 3,
-		image: Blogimg3,
+		image: Blogimg1,
 		heading: "Importance of men’s intimate health",
 		link: "https://medium.com/@menzenic/importance-of-mens-intimate-health-d8979e54ab93",
 	},

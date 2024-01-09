@@ -1,7 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 
-import { HandIcon,EarthIcon,RabbitIcon, TriangleIcon  } from "public/Images";
+import { HandIcon,EarthIcon,RabbitIcon, TriangleIcon  } from "public/icons";
 
 
 import "./ProductQuality.css";

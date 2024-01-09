@@ -1,5 +1,6 @@
 import Link from "next/link";
-// import SearchBar from "../SearchBar/SearchBar";
+import Image from "next/image"
+import Search from "../Search/Search";
 
 const NavBar = () => {
 	return (
@@ -8,7 +9,12 @@ const NavBar = () => {
 				<Link href="/home">
 					{" "}
 					<p className="cursor-pointer text-center  ">
-						{/* <Image src="Images\png\MENZENIC-NAV (1).png" /> */}
+						<Image
+						 src="/MENZENIC-NAV (1).png" 
+						 width={200}
+						 height={200}
+						 className="mt-2"
+						 />
 					</p>{" "}
 				</Link>
 			</div>
@@ -36,7 +42,7 @@ const NavBar = () => {
 			</div>
 
 			<div className=" items-center rounded-lg mt-3">
-				{/* <Search /> */}
+				<Search />
 			</div>
 
 			<div className="text-xl flex justify-between text-center font-semibold gap-3">

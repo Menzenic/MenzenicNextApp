@@ -1,12 +1,15 @@
-/* .product-quality {
-    background: linear-gradient(
+.section-background-image{
+    /* background: linear-gradient(
             180deg,
             #000000 0%,
             rgba(28, 28, 28, 0.479167) 151.51%,
             rgba(53, 53, 53, 0) 303.21%
         ),
-        url("../../utils/assets/png/product_quality_bg.png");
-} */
+        url("/OurBrandProduce.png"); */
+        background: url("/OurBrandPruduct.png") no-repeat center center;
+        background-size: cover;
+        /* background-color: red; */
+}
 
 /* Responsive Styles */
 

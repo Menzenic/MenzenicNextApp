@@ -1,11 +1,15 @@
 import Footer from './Footer/Footer'
 import Header from './Header/Header'
-import WhyIntimateCare from './WhyIntImateCare/WhyIntImateCare'
-import AnImatedFlipCard from './AnImatedFlipCard/AnImatedFlipCard'
+import WhyIntimateCare from './WhyIntimateCare/WhyIntimateCare'
+import AnimatedFlipCard from './AnimatedFlipCard/AnimatedFlipCard'
+import HampersCombo from './HampersCombo/HampersCombo'
+// import Testimonials from './Testimonials/Testimonials'
 
 export {
     Footer,
     Header,
-    AnImatedFlipCard,
-    WhyIntimateCare
+    AnimatedFlipCard,
+    WhyIntimateCare,
+    HampersCombo,
+    // Testimonials
 }
