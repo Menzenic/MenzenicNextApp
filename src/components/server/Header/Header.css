@@ -1,5 +1,7 @@
 .header-image{
-    /* background: url("../../images/Jpgs/header_bg.jpg") no-repeat center center; */
+    background: url("/Home_back.png") no-repeat center center;
     background-size: cover;
-    /* background-color: red; */
+    /* width: 600px; */
+    height: 600px;
+    
 }
