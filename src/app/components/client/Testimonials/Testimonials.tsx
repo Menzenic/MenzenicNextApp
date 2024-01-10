@@ -37,7 +37,7 @@ const Testimonials = () => {
 
     return (
         <section className="min-h-[500px] bg-white">
-            <h2 className="font-semibold text-3xl sm:text-[44px] text-center mt-12">
+            <h2 className="font-semibold mt-[3.44rem] text-3xl sm:text-[44px] text-center ">
                    Testimonials
             </h2>
             <div className="w-full mt-10">
