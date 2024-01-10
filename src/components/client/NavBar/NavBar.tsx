@@ -26,7 +26,7 @@ const NavBar = () => {
 					{" "}
 					<p className="cursor-pointer mx-[10]">About us</p>{" "}
 				</Link>
-				<Link href={"/healthassasment"}>
+				<Link href={"/health-assesment"}>
 					<p>Health Assesment </p>{" "}
 				</Link>
 				<Link href="/blogs">

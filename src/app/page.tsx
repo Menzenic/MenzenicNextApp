@@ -1,8 +1,6 @@
 import clsx from "clsx";
-import { Footer, Header, WhyIntimateCare } from "./components/server";
-import ProductQuality from "./components/server/ProductQuality/ProductQuality";
-// import MenzenicSignature from "./components/client/MenzenicSignature/MenzenicSignature";
-// import { MenzenicSignature } from "./components/client";
+import { Footer, Header, WhyIntimateCare } from "../components/server";
+import ProductQuality from "@/components/server/ProductQuality/ProductQuality";
 
 export default function Home() {
 	return (

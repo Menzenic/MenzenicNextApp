@@ -1,12 +1,14 @@
-import Group from "./Group.jsx";
-import VisionIcon from "./VisionIcon.jsx";
-import TriangleIcon from "./TriangleIcon.jsx";
-import HandIcon from "./HandIcon.jsx";
-import EarthIcon from "./EarthIcon.jsx";
-import RabbitIcon from "./RabbitIcon.jsx";
-import MenzenicFullLogoBlock from "./ManzenicFullLogoBlock.jsx";
+import Group from "./Group";
+import VisionIcon from "./VisionIcon";
+import TriangleIcon from "./TriangleIcon";
+import HandIcon from "./HandIcon";
+import EarthIcon from "./EarthIcon";
+import RabbitIcon from "./RabbitIcon";
+import MenzenicFullLogoBlock from "./ManzenicFullLogoBlock";
+import HA_backdrop from "./HA_backdrop";
 
 export {
+	HA_backdrop,
 	Group,
 	VisionIcon,
 	TriangleIcon,

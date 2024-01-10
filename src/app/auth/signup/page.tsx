@@ -1,8 +1,8 @@
 "use client";
+
 import Link from "next/link";
 import React from "react";
 import { useRouter } from "next/navigation";
-// import {axios} from "axios";
 
 export default function Signpage() {
 	const [user, setUser] = React.useState({
@@ -21,7 +21,7 @@ export default function Signpage() {
 				type="text"
 				id="name"
 				value={user.name}
-				onChange={() => setUser({ ...user, name: e.target.value })}
+				onChange={(e) => setUser({ ...user, name: e.target.value })}
 				placeholder="name"
 			/>
 			<label htmlFor="name">Email</label>
@@ -30,7 +30,7 @@ export default function Signpage() {
 				type="text"
 				id="email"
 				value={user.email}
-				onChange={() => setUser({ ...user, email: e.target.value })}
+				onChange={(e) => setUser({ ...user, email: e.target.value })}
 				placeholder="email"
 			/>
 			<label htmlFor="name">Password</label>

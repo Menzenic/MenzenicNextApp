@@ -1,21 +1,17 @@
 import clsx from "clsx";
 
-// import { HygieneAndComfortIcon } from "../../utils";
-
-// import "./temp.css";
-
-const AnImatedFlipCard = (params : any)  => {
+export default function AnImatedFlipCard(params: any) {
 	return (
 		<div className={clsx("container h-max w-max")}>
 			<div
-				className="card h-[400px] w-[297px]"
+				className="relative card h-[400px] w-[297px]"
 				// style={{
 				// 	transform: showAnimation ? 'rotateY(180deg)' : ''
 				// }}
 			>
 				<div
 					className={clsx(
-						"h-full w-full absolute rounded-[19px] front",
+						"h-full w-full absolute -top-36 left-1/2 -translate-x-1/2 rounded-[19px] front",
 						"flex flex-col justify-center items-center",
 						"md:leading-5"
 					)}
@@ -47,6 +43,4 @@ const AnImatedFlipCard = (params : any)  => {
 			</div>
 		</div>
 	);
-};
-
-export default AnImatedFlipCard;
+}
