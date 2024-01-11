@@ -1,32 +1,10 @@
-.section-background-image{
-    /* background: linear-gradient(
-            180deg,
-            #000000 0%,
-            rgba(28, 28, 28, 0.479167) 151.51%,
-            rgba(53, 53, 53, 0) 303.21%
-        ),
-        url("/OurBrandProduce.png"); */
-        background: url("/OurBrandPruduct.png") no-repeat center center;
-        background-size: cover;
-        /* background-color: red; */
-}
-
-/* Responsive Styles */
-
-@media (max-width: 768px) {
-    .product-quality-title {
-        font-size: 24px;
-    }
-
-    .product-quality-icons {
-        flex-wrap: wrap;
-    }
-
-    .product-quality-icon {
-        flex-basis: 50%;
-    }
-
-    .icon-label {
-        font-size: 14px;
-    }
+.section-background-image {
+	background: linear-gradient(
+			180deg,
+			rgba(0, 0, 0, 0.5) 0%,
+			rgba(53, 53, 53, 0) 100%,
+			rgba(28, 28, 28, 0.24) 100%
+		),
+		url("../../../../public/backdrop1.png");
+	background-size: cover;
 }

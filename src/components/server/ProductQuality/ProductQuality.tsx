@@ -1,47 +1,64 @@
+import Image from "next/image";
+
 import React from "react";
 import clsx from "clsx";
 
-// import { HandIcon,EarthIcon,RabbitIcon, TriangleIcon  } from "";
+import Heading from "@/components/server/Heading";
 
 import "./ProductQuality.css";
-import { EarthIcon, HandIcon, RabbitIcon, TriangleIcon } from "public/icons";
 
 const ProductQuality = () => {
 	return (
 		<div className="section-background-image bg-contain sm:bg-cover min-h-[458px] py-16 text-center relative">
 			<div className={clsx("w-full mx-auto px-4")}>
-				<h2 className="text-3xl sm:text-[44px] font-semibold text-white">
-					Our Brand Promises
-				</h2>
+				<Heading title="Our Brand Promises" className="text-white" />
 				<div className="mt-20 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-20">
 					{/* Icon 1 */}
-					<div className="flex flex-col items-center text-white">
-						<RabbitIcon className="sm:h-[7.4375rem] sm:w-[6.1875rem] h-[5.43rem] w-[4.18rem]" />
-						<span className="mt-3 font-normal text-lg sm:text-2xl leading-7 text-white">
+					<div className="flex flex-col items-center">
+						<Image
+							src={"/icons/rabbit.svg"}
+							alt="Rabbit"
+							width={99}
+							height={119}
+						/>
+						<p className="mt-3 text-2xl text-white">
 							No animal testing
-						</span>
+						</p>
 					</div>
 
 					{/* Icon 2 */}
-					<div className="flex flex-col items-center text-white">
-						<TriangleIcon className="sm:h-[7.4375rem] sm:w-[6.1875rem] h-[5.43rem] w-[4.18rem]" />
-						<span className="mt-3 font-normal text-lg sm:text-2xlleading-7 text-white">
-							Non Toxic
-						</span>
+					<div className="flex flex-col items-center">
+						<Image
+							src={"/icons/triangle.svg"}
+							alt="Non toxic image"
+							width={99}
+							height={117}
+						/>
+						<p className="mt-3 text-2xl text-white">Non Toxic</p>
 					</div>
 
 					{/* Icon 3 */}
-					<div className="flex flex-col items-center text-white">
-						<EarthIcon className="sm:h-[7.4375rem] sm:w-[6.1875rem] h-[5.43rem] w-[4.18rem]" />
-						<span className="mt-3 font-normal text-lg sm:text-2xl leading-7 text-white">
+					<div className="flex flex-col items-center">
+						<Image
+							src={"/icons/earth.svg"}
+							alt="earth icon"
+							width={88}
+							height={114}
+						/>
+						<p className="mt-3 text-2xl text-white">
 							Environment Friendly
-						</span>
+						</p>
 					</div>
 
 					{/* Icon 4 */}
-					<div className="flex flex-col items-center text-white">
-						<HandIcon className="sm:h-[7.4375rem] sm:w-[6.1875rem] h-[5.43rem] w-[4.18rem]" />
-						<span className="mt-3 font-normal text-lg sm:text-2xl leading-7 text-white">
+					<div className="flex flex-col items-center">
+						<Image
+							src={"/icons/hand.svg"}
+							alt="Hand icon"
+							width={107}
+							height={114}
+						/>
+						<span className="mt-3 text-2xl text-white">
 							100% Natural
 						</span>
 					</div>

@@ -2,11 +2,9 @@
 import Heading from "@/components/server/Heading";
 import Image from "next/image";
 
-import "./HampersCombo.css";
-
 const HampersCombo = () => {
 	return (
-		<section className="flex flex-col items-center pt-12 pb-20 px-20 background-image">
+		<section className="flex flex-col items-center pt-12 pb-20 px-20 section-background-image">
 			<Heading title="Hampers & Combos" className="text-white" />
 			<div className="justify-center flex gap-9 mt-11">
 				<HamperItem imageSrc="/hamper.png" alt="Hamper1" />

@@ -1,6 +1,4 @@
-const EarthIcon = () => {
-	return (
-		<svg
+<svg
 			width="88"
 			height="114"
 			viewBox="0 0 88 114"
@@ -35,7 +33,3 @@ const EarthIcon = () => {
 				</clipPath>
 			</defs>
 		</svg>
-	);
-};
-
-export default EarthIcon;

@@ -1,20 +1,17 @@
-import clsx from "clsx";
-import ProductQuality from "./components/server/ProductQuality/ProductQuality";
 import {
 	BlogHome,
-	Footer,
+	FeaturedProducts,
+	HampersCombo,
 	Header,
 	MenzenicSignature,
+	ProductQuality,
 	WhyIntimateCare,
 } from "@/components/server";
-import FeaturedProducts from "./components/client/FeaturedProducts/FeaturedProducts";
-import Testimonials from "./components/client/Testimonials/Testimonials";
-import HampersCombo from "./components/server/HampersCombo/HampersCombo";
-// import {blogs} from "./blogs"
+import { Testimonials } from "@/components/client";
 
 export default function Home() {
 	return (
-		<main className="">
+		<main>
 			<Header />
 			<FeaturedProducts />
 			<ProductQuality />
@@ -23,7 +20,6 @@ export default function Home() {
 			<Testimonials />
 			<BlogHome />
 			<MenzenicSignature />
-			<Footer />
 		</main>
 	);
 }

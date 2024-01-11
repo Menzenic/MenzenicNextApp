@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import {
 	CarouselProvider,
@@ -9,8 +10,8 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
-import testimonialData from "../../../../utils/testimonialData";
-import TestimonialCard from "../TestimonialCard/TestimonialCard";
+import testimonialData from "../../../utils/testimonialData";
+import TestimonialCard from "./TestimonialCard";
 import { RightSliderArrow, LeftSliderArrow } from "public/icons";
 import Heading from "@/components/server/Heading";
 
