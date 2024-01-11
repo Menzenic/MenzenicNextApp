@@ -3,11 +3,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import { useRouter } from "next/navigation";
-import Button from "../../client/Buttons/Button";
 import "./Header.css";
 import Image from "next/image";
 import HomeDoubleDotBar from "public/icons/HomeDoubleDotBar";
 import { HomeDesign } from "public/icons";
+import { Button } from "@/components/client";
 
 export default function Header() {
 	// const navigate = useNavigate();
@@ -15,7 +15,7 @@ export default function Header() {
 
 	return (
 		<div>
-			<Swiper
+			{/* <Swiper
 				slidesPerView={1}
 				autoplay={{
 					delay: 1000,
@@ -24,28 +24,27 @@ export default function Header() {
 				modules={[Autoplay]}
 				speed={2000}
 			>
-				<SwiperSlide>
-					<>
-						<div className="h-[600px] sm:h-[682px] header-image "></div>
-						<div className="absolute w-screen top-[12.688rem] sm:top-[17.688rem] left-[3.188rem]">
-							<div className="text-[24px] sm:text-5xl text-white text-left font-['Arial'] leading-[35px] sm:leading-[55px] font-normal">
-								<p>When it comes to your body,</p>
-								<p className="mt-3 text-center sm:text-left">
-									{" "}
-									cleanliness is key
-								</p>
-							</div>
-
-							<div className=" mt-5 flex items-center w-full justify-center sm:justify-start">
-								{/* <Button
-									title={"Shop Now"}
-									onClick={() => router.push("/products")}
-								/> */}
-							</div>
-						</div>
-					</>
-				</SwiperSlide>
-			</Swiper>
+				<SwiperSlide> */}
+			<>
+				<div className="h-[400px] sm:h-[682px] header-image"></div>
+				<div className="absolute top-[12.688rem] sm:top-[17.688rem] left-[3.188rem]">
+					<div className="text-[24px] sm:text-5xl text-white text-left font-['Arial'] leading-[35px] sm:leading-[55px] font-normal">
+						<p>When it comes to your body,</p>
+						<p className="mt-3 text-center sm:text-left">
+							{" "}
+							cleanliness is key
+						</p>
+					</div>
+					<div className="mt-5 flex items-center w-full justify-center sm:justify-start">
+						<Button
+							title={"Shop Now"}
+							onClick={() => console.log("hello")}
+						/>
+					</div>
+				</div>
+			</>
+			{/* </SwiperSlide>
+			</Swiper> */}
 		</div>
 	);
 }

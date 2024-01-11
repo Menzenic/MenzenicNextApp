@@ -1,7 +1,11 @@
-.header-image{
-    background: url("/Home_back.png") no-repeat center center;
-    background-size: cover;
-    /* width: 600px; */
-    height: 600px;
-    
+.header-image {
+	background: url("../../../../public/header.jpeg");
+	background-size: cover;
+	background-position: 100% 50%;
+	background-repeat: no-repeat;
 }
+
+/* .header-image {
+	background: url("../../images/Jpgs/header_bg.jpg") no-repeat center center;
+	background-size: cover;
+} */

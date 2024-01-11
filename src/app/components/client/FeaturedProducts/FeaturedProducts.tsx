@@ -1,96 +1,49 @@
+import Heading from "@/components/server/Heading";
 import Image from "next/image";
 
-function FeaturedProducts() {
-  return (
-    <div className="bg-white min-h-screen">
-      <div className="text-center text-5xl relative top-12 text-black font-bold font-serif text-4xl md:text-5xl lg:text-6xl">
-        Featured Products
-      </div>
-      <div className="flex flex-wrap justify-center gap-9 mt-9 px-4 md:px-8 lg:px-16 xl:px-32">
-        <div className="text-center rounded-lg">
-          <div>
-            <Image
-              className="rounded-lg"
-              src="/Feature_image_Liq.png"
-              width={200}
-              height={200}
-            />
-          </div>
-          <div className="font-bold text-center pt-3">599</div>
-          <div className="flex space-x-4">
-            <button className="bg-blue-500 border border-black text-white font-bold py-2 px-4 rounded">
-              Add to Cart
-            </button>
-            <button className="bg-green-500 border border-black text-white font-bold py-2 px-4 rounded">
-              Buy Now
-            </button>
-          </div>
-        </div>
+const FeaturedProducts = () => {
+	return (
+		<div className="bg-white pt-12 pb-14">
+			<div className="flex w-full justify-center">
+				<Heading title="Featured products" />
+			</div>
+			<div className="flex flex-wrap justify-center gap-10 mt-24">
+				<FeaturedProductItem title="Product 1" rate="599" />
+				<FeaturedProductItem title="Product 2" rate="599" />
+				<FeaturedProductItem title="Product 3" rate="599" />
+				<FeaturedProductItem title="Product 4" rate="599" />
+			</div>
+		</div>
+	);
+};
 
-        <div className="text-center rounded-lg">
-          <div>
-            <Image
-              className="rounded-lg"
-              src="/Feature_image_Liq.png"
-              width={200}
-              height={200}
-            />
-          </div>
-          <div className="font-bold text-center pt-3">599</div>
-          <div className="flex space-x-4">
-            <button className="bg-blue-500 border border-black text-white font-bold py-2 px-4 rounded">
-              Add to Cart
-            </button>
-            <button className="bg-green-500 border border-black text-white font-bold py-2 px-4 rounded">
-              Buy Now
-            </button>
-          </div>
-        </div>
-
-        <div className="text-center rounded-lg">
-          <div>
-            <Image
-              className="rounded-lg"
-              src="/Feature_image_Liq.png"
-              width={200}
-              height={200}
-            />
-          </div>
-          <div className="font-bold text-center pt-3">599</div>
-          <div className="flex space-x-4">
-            <button className="bg-blue-500 border border-black text-white font-bold py-2 px-4 rounded">
-              Add to Cart
-            </button>
-            <button className="bg-green-500 border border-black text-white font-bold py-2 px-4 rounded">
-              Buy Now
-            </button>
-          </div>
-        </div>
-
-        <div className="text-center rounded-lg">
-          <div>
-            <Image
-              className="rounded-lg"
-              src="/Feature_image_Liq.png"
-              width={200}
-              height={200}
-            />
-          </div>
-          <div className="font-bold text-center pt-3">599</div>
-          <div className="flex space-x-4">
-            <button className="bg-blue-500 border border-black text-white font-bold py-2 px-4 rounded">
-              Add to Cart
-            </button>
-            <button className="bg-green-500 border border-black text-white font-bold py-2 px-4 rounded">
-              Buy Now
-            </button>
-          </div>
-        </div>
-        {/* Repeat the above structure for each product card */}
-        {/* ... */}
-      </div>
-    </div>
-  );
-}
+const FeaturedProductItem = (props: { title: string; rate: string }) => {
+	return (
+		<div
+			className="flex flex-col items-center text-black pt-4 px-3 pb-6"
+			style={{
+				boxShadow: "19px 14px 77px 0px rgba(0, 0, 0, 0.11)",
+			}}
+		>
+			<Image
+				alt="Featured Products"
+				className="rounded-lg"
+				src="/Feature_image_Liq.png"
+				width={82}
+				height={126}
+			/>
+			<p className="mt-3 text-2xl">{props.title}</p>
+			<div className="mt-2 text-xl">{props.rate}</div>
+			<div className="flex justify-between mt-3 text-sm">
+				<button className="border border-black text-black py-2 px-4 rounded mr-1">
+					Add to Cart
+				</button>
+				<button className="bg-black border border-black text-white py-2 px-4 rounded">
+					Buy Now
+				</button>
+			</div>
+		</div>
+	);
+};
 
 export default FeaturedProducts;

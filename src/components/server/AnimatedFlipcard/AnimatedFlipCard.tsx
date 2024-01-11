@@ -1,52 +1,29 @@
 import clsx from "clsx";
+import Image, { StaticImageData } from "next/image";
 
-const AnImatedFlipCard = (params: any) => {
+const AnimatedFlipCard = (props: {
+	imageSrc: string;
+	text: string;
+	alt: string;
+}) => {
 	return (
-		<div className={clsx("container relative h-max w-max")}>
-			<div
-				className="card h-[400px] w-[297px]"
-				style={
-					{
-						// transform: showAnimation ? 'rotateY(180deg)' : ''
-					}
-				}
-			>
-				<div
-					className={clsx(
-						"h-full w-full absolute top-0 left-0  rounded-[19px] front",
-						"flex flex-col justify-start items-center",
-						"md:leading-5"
-					)}
-					style={{
-						boxShadow: "19px 14px 77px 0px rgba(0, 0, 0, 0.11)",
-					}}
-				>
-					<div
-						className={clsx(
-							"w-[124px] h-[124px] relative -top-0.75 rounded-full flex items-center justify-center bg-black"
-							// "sm:w-[164px] sm:h-[164px]"
-						)}
-					>
-						{params.image}
-					</div>
-					{/* <p className="font-bold text-xl mt-5">{params.title}</p> */}
-				</div>
-				<div
-					className={clsx(
-						"h-full w-full flex items-center absolute -bottom-1 left-0 justify-center back",
-						"rounded-[19px]"
-					)}
-					style={{
-						boxShadow: "19px 14px 77px 0px rgba(0, 0, 0, 0.11)",
-					}}
-				>
-					<div className="text-center relative   w-[80%]">
-						{params.para}
-					</div>
-				</div>
+		<div
+			style={{
+				boxShadow: "19px 14px 77px 0px rgba(0, 0, 0, 0.11)",
+			}}
+			className="w-[297px] min-h-[350px] relative rounded-[19px] pb-10 pt-28 px-3 text-black text-lg text-center"
+		>
+			<div className="flex justify-center items-center absolute left-1/2 -translate-x-1/2 -top-20 bg-black h-[164px] w-[164px] rounded-full">
+				<Image
+					src={props.imageSrc}
+					alt={props.alt}
+					width={70}
+					height={70}
+				/>
 			</div>
+			<p>{props.text}</p>
 		</div>
 	);
 };
 
-export default AnImatedFlipCard;
+export default AnimatedFlipCard;

@@ -1,10 +1,15 @@
 import clsx from "clsx";
-import { Footer, Header, WhyIntimateCare } from "./components/server";
 import ProductQuality from "./components/server/ProductQuality/ProductQuality";
-import { MenzenicSignature } from "./components/client";
-import { HampersCombo } from "./components/server";
-import { FeaturedProducts } from "./components/client";
-import { Testimonials } from "./components/client";
+import {
+	BlogHome,
+	Footer,
+	Header,
+	MenzenicSignature,
+	WhyIntimateCare,
+} from "@/components/server";
+import FeaturedProducts from "./components/client/FeaturedProducts/FeaturedProducts";
+import Testimonials from "./components/client/Testimonials/Testimonials";
+import HampersCombo from "./components/server/HampersCombo/HampersCombo";
 // import {blogs} from "./blogs"
 
 export default function Home() {
@@ -16,7 +21,7 @@ export default function Home() {
 			<WhyIntimateCare />
 			<HampersCombo />
 			<Testimonials />
-			{/* <blogs/> */}
+			<BlogHome />
 			<MenzenicSignature />
 			<Footer />
 		</main>

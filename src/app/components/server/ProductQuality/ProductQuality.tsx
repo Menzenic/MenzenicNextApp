@@ -2,6 +2,7 @@ import React from "react";
 import clsx from "clsx";
 
 import { HandIcon, EarthIcon, RabbitIcon, TriangleIcon } from "public/icons";
+import Heading from "@/components/server/Heading";
 
 import "./ProductQuality.css";
 
@@ -9,9 +10,7 @@ const ProductQuality = () => {
 	return (
 		<div className="section-background-image bg-contain sm:bg-cover min-h-[458px] py-16 text-center relative">
 			<div className={clsx("w-full mx-auto px-4")}>
-				<h2 className="text-3xl sm:text-[44px] font-semibold text-white">
-					Our Brand Promises
-				</h2>
+				<Heading title="Our Brand Promises" className="text-white" />
 				<div className="mt-20 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-20">
 					{/* Icon 1 */}
 					<div className="flex flex-col items-center text-white">

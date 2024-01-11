@@ -1,55 +1,47 @@
 import React from "react";
-import Image from "next/image"
+import Image from "next/image";
 import clsx from "clsx";
-import AnImatedFlipCard from "../AnimatedFlipCard/AnimatedFlipCard";
+
 import LikeIcon from "public/icons/LikeIcon";
 import SmileIcon from "public/icons/SmileIcon";
 import HygieneAndComfortIcon from "public/icons/HygieneAndComfortIcon";
-import "./WhyIntimate.css"
+import { AnimatedFlipCard } from "..";
+import Heading from "../Heading";
 
 const WhyIntimateCare = () => {
-  return (
-    <div className="p-4 mt-67 relative top-1 min-h-[658px] bg-white">
-      <h2 className="text-3xl sm:text-[44px] font-bold text-center">
-        Why Intimate Care Is Important?
-      </h2>
-      <p className="text-center text-black mt-4 font-normal font-sans text-base md:text-lg lg:text-xl">
-        Neglecting intimate hygiene risks infections and discomfort. Prioritize it to maintain a  <br />healthy genital area and overall well-being.
-      </p>
-      <div className="flex justify-center items-center w-full mt-16">
-        <div
-          className={clsx(
-            " flex flex-col justify-between",
-            "lg:flex-row"
-          )}
-        >
-          <AnImatedFlipCard
-            image={<HygieneAndComfortIcon />}
-            title={"Hygiene and Comfort"}
-            para={
-              "Removing excess hair in sensitive areas can reduce sweat, odor, and bacterial buildup, keeping you feeling fresh and confident throughout the day."
-            }
-          />
-
-          <AnImatedFlipCard
-            image={<SmileIcon />}
-            title={"Enhanced Appearance"}
-            para={
-              "Neatly removing body hair can accentuate your physique, allowing your hard work at the gym to shine."
-            }
-          />
-
-          <AnImatedFlipCard
-            image={<LikeIcon />}
-            title={"Boosted Confidence"}
-            para={
-              "A well-groomed look boosts self-confidence, as caring for your body positively impacts self-image and outlook across life's aspects."
-            }
-          />
-        </div>
-      </div>
-    </div>
-  );
+	return (
+		<div className="py-16 flex flex-col items-center bg-white">
+			<Heading title="Why Intimate Care is Important?" />
+			<p className="text-center text-black mt-9 font-normal text-2xl">
+				Neglecting intimate hygiene risks infections and discomfort.
+				Prioritize it to maintain a <br />
+				healthy genital area and overall well-being.
+			</p>
+			<div className="flex justify-center gap-16 items-center w-full mt-32">
+				<AnimatedFlipCard
+					imageSrc="/icons/smile.svg"
+					alt="Poor hygiene"
+					text={
+						"Poor intimate hygiene can have lasting health implications, paving the way for the development of grave illnesses if disregarded."
+					}
+				/>
+				<AnimatedFlipCard
+					imageSrc="/icons/thumb.svg"
+					alt="Thumb"
+					text={
+						"Opting for the right intimate care products can strengthen your immune system and elevate your sense of confidence."
+					}
+				/>
+				<AnimatedFlipCard
+					imageSrc="/icons/heart.svg"
+					alt="Heart"
+					text={
+						"Practising good intimate hygiene not only boosts confidence, reduces discomfort, and prevents infections, but also improves intimacy and supports erectile health."
+					}
+				/>
+			</div>
+		</div>
+	);
 };
 
 export default WhyIntimateCare;

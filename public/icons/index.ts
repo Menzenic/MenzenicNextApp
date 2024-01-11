@@ -4,7 +4,6 @@ import TriangleIcon from "./TriangleIcon";
 import HandIcon from "./HandIcon";
 import EarthIcon from "./EarthIcon";
 import RabbitIcon from "./RabbitIcon";
-import MenzenicFullLogoBlock from "./ManzenicFullLogoBlock";
 import LikeIcon from "./LikeIcon";
 import SmileIcon from "./SmileIcon";
 import HygieneAndComfortIcon from "./HygieneAndComfortIcon";
@@ -20,7 +19,6 @@ export {
 	HandIcon,
 	EarthIcon,
 	RabbitIcon,
-	MenzenicFullLogoBlock,
 	LikeIcon,
 	SmileIcon,
 	HygieneAndComfortIcon,

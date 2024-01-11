@@ -1,11 +1,11 @@
-"use client";
-
 import clsx from "clsx";
 import React, { useEffect, useState } from "react";
 
-const PrimaryButton = (props: {
-	className: string;
-	onClick: React.MouseEventHandler<HTMLDivElement>;
+import "./Button.css";
+
+const Button = (props: {
+	className?: string;
+	onClick: () => void;
 	title: string;
 }) => {
 	const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -43,4 +43,4 @@ const PrimaryButton = (props: {
 	);
 };
 
-export default PrimaryButton;
+export default Button;
