@@ -14,7 +14,7 @@ import { flushSync } from "react-dom";
 // import SexualHealthSection from "../../components/Chat/SexualHealthSection";
 
 import { PrimaryButton } from "@/components/client";
-import { HA_backdrop } from "public/icons";
+// import { HA_backdrop } from "public/icons";
 import SexualHealthSection from "@/components/client/SexualHealthSection/SexualHealthSection";
 
 // import "./temp.css";
@@ -388,13 +388,13 @@ const HealthAssessment = () => {
 						</span> */}
 					</div>
 				</div>
-				<HA_backdrop
+				{/* <HA_backdrop
 					className={clsx(
 						"absolute bottom-0 right-0",
 						"md:h-[50%] md:w-[50%]",
 						""
 					)}
-				/>
+				/> */}
 			</div>
 			{/* <div id="chatBot" className={clsx("h-[900px] w-[900px] bg-red-400")}></div> */}
 
@@ -418,7 +418,7 @@ const HealthAssessment = () => {
 						<p className="text-white text-[22px] font-bold">
 							Health Assessment
 						</p>
-						<HealthAssesmentRobotIcon className="absolute top-10 -left-[70px]" />
+						{/* <HealthAssesmentRobotIcon className="absolute top-10 -left-[70px]" /> */}
 					</div>
 					<div className="mt-5 w-[80%] overflow-y-scroll lg:max-h-[80%] scrollbar-hidden">
 						{/* <ChatRoom height={height} /> */}

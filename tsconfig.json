@@ -24,6 +24,14 @@
       "swiper/react": ["node_modules/swiper/react"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/components/client/Products/Products.js", "src/components/client/About/About.js", "src/components/client/Healthassasment/Healthassasment.js", "src/app/health-assesment/page.tsx.old"],
+  "include": [
+    "next-env.d.ts", 
+    "**/*.ts", 
+    "**/*.tsx", 
+    ".next/types/**/*.ts", 
+    "src/components/client/Products/Products.js", 
+    "src/components/client/About/About.js", 
+    "src/components/client/Healthassasment/Healthassasment.js", 
+    "src/app/health-assesment/HealthAssessmentOld.tsx"],
   "exclude": ["node_modules"]
 }

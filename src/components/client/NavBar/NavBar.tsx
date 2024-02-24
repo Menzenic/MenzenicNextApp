@@ -71,7 +71,7 @@ const NavBar = () => {
 			<div className="flex">
 				<SearchBar />
 
-				<Link href={"/user/profile"}>
+				<Link href={"/user"}>
 					<Image
 						src={"/icons/profile.svg"}
 						alt="profile"
@@ -80,7 +80,7 @@ const NavBar = () => {
 						className="ml-4"
 					/>
 				</Link>
-				<Link href={"/user/cart"}>
+				<Link href={"/user/order-history"}>
 					<Image
 						src={"/icons/cart.svg"}
 						alt="cart"

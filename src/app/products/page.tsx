@@ -1,28 +1,51 @@
-import Image from 'next/image'
+import { ProductItem } from "@/components/products/product-item";
+import { PRODUCTS } from "@/data/data";
+import Image from "next/image";
 
-export default function Product() {
-  return (
-    <div className="min-h-[700px] flex justify-between items-center bg-slate-950">
-  <div className="pl-20 text-sm lg:text-2xl text-white h-[300px] flex flex-col justify-between">
-      <p className="text-4xl font-bold pl-2  text-white ">Claims</p>
-            <p className="text-2xl font-bold pl-7 mt-2 text-white">
-			    &#x2022; The best product in the hair removal space - if
-				you don’t believe us, try it out for yourself.
-			</p><br />
-            <p className="text-2xl font-bold pl-7 text-white mt-2">&#x2022; Saves you time, removes hair in just 5 mins.</p><br />
-					<p className="text-2xl font-bold   text-white pl-7 mt-2">
-						&#x2022; No side effects, applicable on all skin types.
-					</p><br />
-					<p className="text-2xl font-bold pl-7 text-white mt-2">[One Product, honed to perfection]</p><br />
-  </div>
+export default async function Product() {
+	return (
+		<div
+			className="min-h-[700px] flex flex-col items-center bg-black px-8"
+			style={{
+				background:
+					"linear-gradient(180deg, #000 -4.92%, rgba(117, 113, 113, 0.46) 180.98%, rgba(164, 164, 164, 0.00) 225.36%)",
+			}}
+		>
+			<div className="w-full flex justify-between items-center">
+				<p className="text-3xl">All products</p>
+				<div className="flex gap-2 justify-between">
+					<Image
+						src={"/icons/filter.svg"}
+						alt="filter.svg"
+						width={24}
+						height={24}
+						className="cursor-pointer"
+					/>
+					{/* TODO in stock from db */}
+					<p className="font-bold underline underline-offset-4 cursor-pointer">
+						In stock
+					</p>
 
-  <div className="grid-auto-flow: row mt-20">
-               <Image
-                src='/Header_HRS.png'
-                width={500}
-                height={500}
-               />
-  </div>
-    </div>
-  )
+					{/* TODO out of stock from db */}
+					<p className="text-opacity-10 font-light cursor-pointer">
+						Out of stock
+					</p>
+				</div>
+			</div>
+			<div className="w-[1067px] py-14 flex flex-col gap-11">
+				{/* TODO: fetch product data from db */}
+				{PRODUCTS.map((product) => {
+					return (
+						<ProductItem
+							key={product.id}
+							imageSrc={product.imageSrc}
+							alt={product.alt}
+							productName={product.productName}
+							productPrice={product.productPrice}
+						/>
+					);
+				})}
+			</div>
+		</div>
+	);
 }
